@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Susie's Stories - KUDC’s Fight for Justice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        surface: "#fbf9f5", "on-surface": "#191c1e",
+                        background: "#fbf9f5", primary: "#7796a2",
+                        secondary: "#d9b8c0", tertiary: "#9eb3a2",
+                        "surface-container": "#f5f3ef", "surface-container-low": "#f5f3ef",
+                        "outline-variant": "#e1e2e4"
+                    },
+                    fontFamily: { headline: ["Noto Serif"], body: ["Inter"], label: ["Inter"] }
+                }
+            }
+        }
+    </script>
+    <style>body { background-color: #fbf9f5; color: #1b1c1a; }</style>
+</head>
+<body class="font-body selection:bg-secondary/30 selection:text-on-surface">
+
+<nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+        <div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">Susie's Stories</div>
+        <div class="hidden md:flex items-center gap-10">
+            <a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 transition-colors" href="index.html">Home</a>
+            <a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 transition-colors" href="about.html">About Me</a>
+            <a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 transition-colors" href="photography.html">Photography</a>
+            <a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2] border-b-2 border-[#7796a2] pb-1" href="written-works.html">Written Works</a>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-6 md:px-12 pt-16 mb-20 text-center">
+    <a href="written-works.html" class="inline-flex items-center gap-2 text-primary hover:underline font-label text-sm uppercase tracking-widest mb-8"><span class="material-symbols-outlined text-sm">arrow_back</span> Back to List</a>
+    <h1 class="font-headline text-3xl md:text-5xl font-bold mb-8 max-w-4xl mx-auto">KUDC’s Fight for Justice</h1>
+    <div class="aspect-[16/9] w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-sm mb-12 border-2 border-secondary/20">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwL6rSdoAE8hfOMHv00YVTi3dD_qeS11IEeDg_Py0JwSOJdHwuo4RnK3N2BDQ6Z_k5MztBcQlMcgYc8lwrjOtru_s4lgPutXP-ey_VEsntEoNsEEbdADodjg5_ev_87uxsJV5CsVYtH39NZzItE6y6pyubhbJuhzxf2qaEP2UlFZW9S2aDSYFkbZGPBOHffuOTyleenWvY99FzeCDP92KGfVKkvGMOJkC2P2IQ9n7waegKbgnIgKoz-6EJM_uN3zzb2HxATFnSZtc" />
+    </div>
+    
+    <div class="max-w-4xl mx-auto bg-surface-container-low p-4 rounded-xl shadow-inner min-h-[800px] border border-outline-variant/30">
+        <embed src="assets/written_works/the-tower-kudc-s-fight-for-justice-2-.pdf" width="100%" height="800px" type="application/pdf" class="rounded border" />
+    </div>
+</main>
+
+<footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
+    <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+        <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+        <div class="flex gap-8">
+            <a class="font-label text-[0.6875rem] uppercase tracking-widest text-[#7796a2] hover:underline" href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2024 Susie's Stories. All rights reserved.</div>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
