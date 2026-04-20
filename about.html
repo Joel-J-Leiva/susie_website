@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<title>Susie's Stories</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Susie's Stories</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -41,174 +47,218 @@
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         body {
             background-color: #fbf9f5;
             color: #1b1c1a;
         }
     </style>
 </head>
+
 <body class="font-body selection:bg-secondary/30 selection:text-on-surface">
-<!-- TopNavBar -->
-<nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 z-50">
-<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-<div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+    <!-- TopNavBar -->
+    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
                 Susie's Stories
             </div>
-<div class="hidden md:flex items-center gap-10">
-<a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="index.html">Home</a>
-<a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1" href="about.html">About Me</a>
-<a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="photography.html">Photography</a>
-<a class="font-['Noto_Serif'] text-lg font-medium tracking-tight text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="written-works.html">Written Works</a>
-<div class="ml-4 text-[#7796a2] dark:text-[#a0c0cd]">
-<button id="copyMailBtn" class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150 text-[#7796a2]">mail</button>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
-</nav>
-<main class="max-w-7xl mx-auto px-6 md:px-12 pt-16">
-<!-- Hero Section: Personal Bio -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-32">
-<div class="md:col-span-5 relative">
-<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden ring-2 ring-secondary/20">
-<img class="w-full h-full object-cover transition-all duration-700" data-alt="Soft-lit portrait of a young journalism student in a library, warm natural light, cinematic film aesthetic, soft focus background" src="assets/images/susie-pic.jpg"/>
-</div>
-</div>
-<div class="md:col-span-7">
-<p class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary mb-4 font-bold">Journalism &amp; Narrative Non-Fiction</p>
-<h1 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-on-surface mb-8 leading-tight">
+            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1" href="about.html">About
+                    Me</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="photography.html">Photography</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="written-works.html">Written Works</a>
+            </div>
+            <div class="flex items-center gap-4 text-[#7796a2]">
+                <button id="copyMailBtn"
+                    class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
+            </div>
+        </div>
+        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-6 md:px-12 pt-32">
+        <!-- Hero Section: Personal Bio -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-32">
+            <div class="md:col-span-5 relative">
+                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden ring-2 ring-secondary/20">
+                    <img class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                        data-alt="Soft-lit portrait of a young journalism student in a library, warm natural light, cinematic film aesthetic, soft focus background"
+                        src="assets/images/susie-pic.jpg" />
+                </div>
+            </div>
+            <div class="md:col-span-7">
+                <p class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary mb-4 font-bold">
+                    Journalism &amp; Narrative Non-Fiction</p>
+                <h1
+                    class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-on-surface mb-8 leading-tight">
                     Documenting the nuance of the <span class="italic font-normal">everyday.</span>
-</h1>
-<div class="font-body text-lg leading-relaxed text-on-surface/80 max-w-2xl space-y-6">
-<p>
-                        I am currently pursuing a Bachelor of Arts in English Literature and Communication – Journalism at Kean University. My reporting focuses on cultural storytelling, mental health advocacy, and bringing hidden community issues to the forefront.
+                </h1>
+                <div class="font-body text-lg leading-relaxed text-on-surface/80 max-w-2xl space-y-6">
+                    <p>
+                        I am currently pursuing a Bachelor of Arts in English Literature and Communication – Journalism
+                        at Kean University. My reporting focuses on cultural storytelling, mental health advocacy, and
+                        bringing hidden community issues to the forefront.
                     </p>
-<p>
-                        Through my role as Feature Editor and Staff Reporter for The Tower, I craft deeply researched narratives while ensuring rigorous editorial standards. My internship at The Lesniak Institute further grounds my work in real-world community impact and public outreach.
+                    <p>
+                        Through my role as Feature Editor and Staff Reporter for The Tower, I craft deeply researched
+                        narratives while ensuring rigorous editorial standards. My internship at The Lesniak Institute
+                        further grounds my work in real-world community impact and public outreach.
                     </p>
-</div>
-<div class="mt-10 flex gap-6 items-center">
-<button id="getInTouchBtn" class="bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity active:scale-95 duration-150">
+                </div>
+                <div class="mt-10 flex gap-6 items-center">
+                    <button id="getInTouchBtn"
+                        class="bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity active:scale-95 duration-150">
                         Work with me
                     </button>
-<a href="#resumes" class="flex items-center gap-2 group px-6 py-3 rounded-xl border border-outline-variant hover:border-primary transition-all">
-<span class="font-label text-sm text-on-surface/70 group-hover:text-on-surface transition-colors">View Resumes</span>
-<span class="material-symbols-outlined text-sm text-primary">arrow_downward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Bento Grid: Interests & Goals -->
-<section class="mb-32">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Academic Interests (Editorial Pull-Quote Style) -->
-<div class="md:col-span-2 bg-surface-container-low p-12 rounded-xl relative overflow-hidden flex flex-col justify-center">
-<div class="absolute left-0 top-1/4 bottom-1/4 w-1.5 bg-secondary rounded-full"></div>
-<p class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-on-surface/50 mb-6 font-bold">Academic Foundations</p>
-<h2 class="font-headline text-3xl font-bold text-on-surface mb-6 leading-snug">
-                        Bridging <span class="italic">English Literature</span> and <span class="italic text-primary">Journalism</span> for empathetic reportage.
+                    <a href="#resumes"
+                        class="flex items-center gap-2 group px-6 py-3 rounded-xl border border-outline-variant hover:border-primary transition-all">
+                        <span
+                            class="font-label text-sm text-on-surface/70 group-hover:text-on-surface transition-colors">View
+                            Resumes</span>
+                        <span class="material-symbols-outlined text-sm text-primary">arrow_downward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Bento Grid: Interests & Goals -->
+        <section class="mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Academic Interests (Editorial Pull-Quote Style) -->
+                <div
+                    class="md:col-span-2 bg-surface-container-low p-12 rounded-xl relative overflow-hidden flex flex-col justify-center">
+                    <div class="absolute left-0 top-1/4 bottom-1/4 w-1.5 bg-secondary rounded-full"></div>
+                    <p
+                        class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-on-surface/50 mb-6 font-bold">
+                        Academic Foundations</p>
+                    <h2 class="font-headline text-3xl font-bold text-on-surface mb-6 leading-snug">
+                        Bridging <span class="italic">English Literature</span> and <span
+                            class="italic text-primary">Journalism</span> for empathetic reportage.
                     </h2>
-<blockquote class="font-headline italic text-lg leading-relaxed text-on-surface/90 border-l-2 border-primary pl-6 my-6">
-                        Walt Whitmann, O Me! O Life!<br/><br/>
-                        "That you are here—that life exists and identity,<br/>
+                    <blockquote
+                        class="font-headline italic text-lg leading-relaxed text-on-surface/90 border-l-2 border-primary pl-6 my-6">
+                        Walt Whitmann, O Me! O Life!<br /><br />
+                        "That you are here—that life exists and identity,<br />
                         That the powerful play goes on, and you may contribute a verse."
                     </blockquote>
-</div>
-<!-- Journalism Goals -->
-<div class="bg-surface-container-lowest border border-secondary/10 p-10 rounded-xl shadow-sm flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-primary mb-6 scale-125">auto_stories</span>
-<h3 class="font-headline text-xl font-bold mb-4">Journalism Goals</h3>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-<p class="font-body text-sm text-on-surface/80 font-medium">Promote Awareness</p>
-</li>
-<li class="flex items-start gap-3">
-<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-<p class="font-body text-sm text-on-surface/80 font-medium">Represent Marginalized Populations</p>
-</li>
-<li class="flex items-start gap-3">
-<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-<p class="font-body text-sm text-on-surface/80 font-medium">Exemplify Transparency</p>
-</li>
-</ul>
-</div>
-<div class="pt-8 mt-8 border-t border-surface-container-high">
-<p class="font-body italic text-sm text-on-surface/60">"Truth through the lens of human experience."</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills Section: Tonal Transition -->
-<section class="bg-surface-container p-12 md:p-20 rounded-xl mb-32">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-headline text-4xl font-bold mb-4">Technical Toolkit</h2>
-<div class="h-0.5 w-16 bg-primary mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<div class="space-y-4 text-center md:text-left">
-<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
-<span class="material-symbols-outlined text-primary">edit_note</span>
-</div>
-<h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">Editorial</h4>
-<p class="font-body text-sm text-on-surface/70 leading-relaxed">Copy Editing, Fact Checking, Style Guide Adherence (AP/Chicago), Narrative Structure.</p>
-</div>
-<div class="space-y-4 text-center md:text-left">
-<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
-<span class="material-symbols-outlined text-primary">layers</span>
-</div>
-<h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">Creative Suite</h4>
-<p class="font-body text-sm text-on-surface/70 leading-relaxed">Canva, Adobe Premiere Pro.</p>
-</div>
-<div class="space-y-4 text-center md:text-left">
-<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
-<span class="material-symbols-outlined text-primary">camera</span>
-</div>
-<h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">Multimedia</h4>
-<p class="font-body text-sm text-on-surface/70 leading-relaxed">Digital Photography, Photojournalism, Field Recording, Audio Production for Podcasts.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section id="resumes" class="text-center pb-20">
-    <h2 class="font-headline text-3xl font-bold mb-8">Curriculum Vitae</h2>
-    <div class="flex flex-col sm:flex-row justify-center gap-6">
-        <div class="inline-block p-0.5 bg-secondary rounded-full">
-            <a class="flex items-center justify-between gap-4 px-8 py-4 bg-surface rounded-full hover:bg-surface-container transition-colors group border border-secondary/20" href="assets/resumes/english-resume.pdf" target="_blank">
-                <span class="font-label text-sm uppercase tracking-widest font-bold text-on-surface">
-                    English Resume
-                </span>
-                <span class="material-symbols-outlined text-primary group-hover:translate-y-1 transition-transform">download</span>
-            </a>
+                </div>
+                <!-- Journalism Goals -->
+                <div
+                    class="bg-surface-container-lowest border border-secondary/10 p-10 rounded-xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="material-symbols-outlined text-primary mb-6 scale-125">auto_stories</span>
+                        <h3 class="font-headline text-xl font-bold mb-4">Journalism Goals</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                                <p class="font-body text-sm text-on-surface/80 font-medium">Promote Awareness</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                                <p class="font-body text-sm text-on-surface/80 font-medium">Represent Marginalized
+                                    Populations</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                                <p class="font-body text-sm text-on-surface/80 font-medium">Exemplify Transparency</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-8 mt-8 border-t border-surface-container-high">
+                        <p class="font-body italic text-sm text-on-surface/60">"Truth through the lens of human
+                            experience."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section: Tonal Transition -->
+        <section class="bg-surface-container p-12 md:p-20 rounded-xl mb-32">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline text-4xl font-bold mb-4">Technical Toolkit</h2>
+                    <div class="h-0.5 w-16 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="space-y-4 text-center md:text-left">
+                        <div
+                            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
+                            <span class="material-symbols-outlined text-primary">edit_note</span>
+                        </div>
+                        <h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">
+                            Editorial</h4>
+                        <p class="font-body text-sm text-on-surface/70 leading-relaxed">Copy Editing, Fact Checking,
+                            Style Guide Adherence (AP/Chicago), Narrative Structure.</p>
+                    </div>
+                    <div class="space-y-4 text-center md:text-left">
+                        <div
+                            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
+                            <span class="material-symbols-outlined text-primary">layers</span>
+                        </div>
+                        <h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">
+                            Creative Suite</h4>
+                        <p class="font-body text-sm text-on-surface/70 leading-relaxed">Canva, Adobe Premiere Pro.</p>
+                    </div>
+                    <div class="space-y-4 text-center md:text-left">
+                        <div
+                            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-sm">
+                            <span class="material-symbols-outlined text-primary">camera</span>
+                        </div>
+                        <h4 class="font-label text-[0.6875rem] uppercase tracking-widest font-bold text-tertiary">
+                            Multimedia</h4>
+                        <p class="font-body text-sm text-on-surface/70 leading-relaxed">Digital Photography,
+                            Photojournalism, Field Recording, Audio Production for Podcasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA -->
+        <section id="resumes" class="text-center pb-20">
+            <h2 class="font-headline text-3xl font-bold mb-8">Curriculum Vitae</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <div class="inline-block p-0.5 bg-secondary rounded-full">
+                    <a class="flex items-center justify-between gap-4 px-8 py-4 bg-surface rounded-full hover:bg-surface-container transition-colors group border border-secondary/20"
+                        href="assets/resumes/english-resume.pdf" target="_blank">
+                        <span class="font-label text-sm uppercase tracking-widest font-bold text-on-surface">
+                            English Resume
+                        </span>
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:translate-y-1 transition-transform">download</span>
+                    </a>
+                </div>
+                <div class="inline-block p-0.5 bg-secondary rounded-full">
+                    <a class="flex items-center justify-between gap-4 px-8 py-4 bg-surface rounded-full hover:bg-surface-container transition-colors group border border-secondary/20"
+                        href="assets/resumes/journalism-resume.pdf" target="_blank">
+                        <span class="font-label text-sm uppercase tracking-widest font-bold text-on-surface">
+                            Journalism Resume
+                        </span>
+                        <span
+                            class="material-symbols-outlined text-primary group-hover:translate-y-1 transition-transform">download</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
+        <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
+                <button id="footerContactBtn"
+                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
+                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+                All rights reserved.</div>
         </div>
-        <div class="inline-block p-0.5 bg-secondary rounded-full">
-            <a class="flex items-center justify-between gap-4 px-8 py-4 bg-surface rounded-full hover:bg-surface-container transition-colors group border border-secondary/20" href="assets/resumes/journalism-resume.pdf" target="_blank">
-                <span class="font-label text-sm uppercase tracking-widest font-bold text-on-surface">
-                    Journalism Resume
-                </span>
-                <span class="material-symbols-outlined text-primary group-hover:translate-y-1 transition-transform">download</span>
-            </a>
-        </div>
-    </div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
-    <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-        <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
-        <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
-            <button id="footerContactBtn" class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
-            <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all" href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
-        </div>
-        <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories. All rights reserved.</div>
-    </div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

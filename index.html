@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<title>Susie's Stories</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Susie's Stories</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class", 
+            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
@@ -24,146 +30,193 @@
                         "surface-container-low": "#f5f3ef",
                         "surface-container-lowest": "#ffffff",
                         "outline-variant": "#e1e2e4"
-                    }, 
+                    },
                     borderRadius: {
-                        DEFAULT: "0.125rem", 
-                        lg: "0.25rem", 
-                        xl: "0.5rem", 
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
                         full: "0.75rem"
-                    }, 
+                    },
                     fontFamily: {
-                        headline: ["Noto Serif"], 
-                        body: ["Inter"], 
-                        label: ["Inter"], 
+                        headline: ["Noto Serif"],
+                        body: ["Inter"],
+                        label: ["Inter"],
                         display: "Noto Serif"
                     }
                 }
             }
         };
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         body {
             background-color: #fbf9f5;
             color: #1b1c1a;
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, .serif {
+
+        h1,
+        h2,
+        h3,
+        .serif {
             font-family: 'Noto Serif', serif;
         }
     </style>
 </head>
+
 <body class="bg-background text-on-surface selection:bg-secondary/30 selection:text-on-surface">
-<!-- TopNavBar -->
-<nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50">
-<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-<div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+    <!-- TopNavBar -->
+    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
                 Susie's Stories
             </div>
-<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
-<a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1" href="index.html">Home</a>
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="about.html">About Me</a>
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="photography.html">Photography</a>
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors" href="written-works.html">Written Works</a>
-</div>
-<div class="flex items-center gap-4 text-[#7796a2]">
-<button id="copyMailBtn" class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
-</div>
-</div>
-<div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
-</nav>
-<main class="pt-32">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-10 mb-32">
-<div class="flex flex-col md:flex-row gap-20 items-end">
-<div class="flex-1">
-<span class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold mb-4 block">Introduction</span>
-<h1 class="text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-headline font-bold tracking-tight mb-8">
-                        Susan Annette Berube (Susie): <br/>
+            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
+                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1"
+                    href="index.html">Home</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="about.html">About Me</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="photography.html">Photography</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="written-works.html">Written Works</a>
+            </div>
+            <div class="flex items-center gap-4 text-[#7796a2]">
+                <button id="copyMailBtn"
+                    class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
+            </div>
+        </div>
+        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+    </nav>
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-10 mb-32">
+            <div class="flex flex-col md:flex-row gap-20 items-end">
+                <div class="flex-1">
+                    <span
+                        class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold mb-4 block">Introduction</span>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-headline font-bold tracking-tight mb-8">
+                        Susan Annette Berube (Susie): <br />
                         Storyteller, Student, Activist.
                     </h1>
-<p class="text-xl font-body leading-relaxed text-on-surface/80 max-w-xl">
-                        Exploring the intersection of literature, news, and the human experience through long-form journalism and visual documentation.
+                    <p class="text-xl font-body leading-relaxed text-on-surface/80 max-w-xl">
+                        Exploring the intersection of literature, news, and the human experience through long-form
+                        journalism and visual documentation.
                     </p>
-<a href="written-works.html" class="inline-block bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">
-                            View Portfolio
-                        </a>
-<a class="font-headline italic text-lg text-primary border-b-2 border-primary/20 hover:border-primary transition-all" href="article-everything-is-political-contemporary-issues-blog-.html">Read my latest paper</a>
-</div>
-<div class="flex-1 w-full">
-<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden relative group">
-<img alt="Susan Annette Berube (Susie)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Candid portrait of a young woman with books in a sunlit vintage library setting, soft warm golden hour light" src="assets/images/susans-headshot.jpg"/>
-<div class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-lg border-2 border-secondary/20"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Writing Pieces -->
-<section class="bg-surface-container-low py-24 mb-32">
-<div class="max-w-7xl mx-auto px-10">
-<div class="flex justify-between items-baseline mb-16">
-<h2 class="text-[1.75rem] font-headline font-bold">Featured Written Works</h2>
-<a class="font-label text-[0.6875rem] uppercase tracking-widest text-primary hover:underline" href="written-works.html">Explore all archives</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-<!-- Writing Card 1 -->
-<div class="md:col-span-7 bg-surface-container-lowest p-12 rounded-lg relative overflow-hidden group border border-secondary/10">
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-<span class="font-label text-[0.6875rem] uppercase tracking-widest text-tertiary mb-6 block font-bold">Featured Essay</span>
-<h3 class="text-3xl font-headline font-bold mb-6 leading-tight max-w-lg">Everything is Political: Contemporary Issues (Blog)</h3>
-<p class="text-on-surface/70 leading-relaxed mb-8 max-w-md">An exploration of the underlying political currents in modern everyday topics.</p>
-<a class="flex items-center gap-2 font-headline italic text-lg text-primary group-hover:gap-4 transition-all" href="article-everything-is-political-contemporary-issues-blog-.html">
+                    <a href="written-works.html"
+                        class="inline-block bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">
+                        View Portfolio
+                    </a>
+                    <a class="font-headline italic text-lg text-primary border-b-2 border-primary/20 hover:border-primary transition-all"
+                        href="article-everything-is-political-contemporary-issues-blog-.html">Read my latest paper</a>
+                </div>
+                <div class="flex-1 w-full">
+                    <div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden relative group">
+                        <img alt="Susan Annette Berube (Susie)"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Candid portrait of a young woman with books in a sunlit vintage library setting, soft warm golden hour light"
+                            src="assets/images/susans-headshot.jpg" />
+                        <div
+                            class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-lg border-2 border-secondary/20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Writing Pieces -->
+        <section class="bg-surface-container-low py-24 mb-32">
+            <div class="max-w-7xl mx-auto px-10">
+                <div class="flex justify-between items-baseline mb-16">
+                    <h2 class="text-[1.75rem] font-headline font-bold">Featured Written Works</h2>
+                    <a class="font-label text-[0.6875rem] uppercase tracking-widest text-primary hover:underline"
+                        href="written-works.html">Explore all archives</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                    <!-- Writing Card 1 -->
+                    <div
+                        class="md:col-span-7 bg-surface-container-lowest p-12 rounded-lg relative overflow-hidden group border border-secondary/10">
+                        <div
+                            class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+                        </div>
+                        <span
+                            class="font-label text-[0.6875rem] uppercase tracking-widest text-tertiary mb-6 block font-bold">Featured
+                            Essay</span>
+                        <h3 class="text-3xl font-headline font-bold mb-6 leading-tight max-w-lg">Everything is
+                            Political: Contemporary Issues (Blog)</h3>
+                        <p class="text-on-surface/70 leading-relaxed mb-8 max-w-md">An exploration of the underlying
+                            political currents in modern everyday topics.</p>
+                        <a class="flex items-center gap-2 font-headline italic text-lg text-primary group-hover:gap-4 transition-all"
+                            href="article-everything-is-political-contemporary-issues-blog-.html">
                             Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-<!-- Writing Card 2 -->
-<div class="md:col-span-5 bg-surface-container-lowest p-12 rounded-lg relative overflow-hidden group self-center border border-secondary/10 min-h-[300px] opacity-0 pointer-events-none">
-</div>
-</div>
-</div>
-</section>
-<!-- Pull Quote Component -->
-<section class="max-w-7xl mx-auto px-10 mb-32 flex justify-center">
-<div class="max-w-4xl relative">
-<div class="absolute -left-8 top-0 bottom-0 w-1.5 bg-secondary rounded-full"></div>
-<blockquote class="text-2xl md:text-3xl lg:text-4xl md:text-3xl md:text-4xl lg:text-5xl font-headline leading-tight text-on-surface italic px-4">
-                    "Journalism is the first rough draft of history, but literature is the ink that makes that history felt by the human heart."
+                        </a>
+                    </div>
+                    <!-- Writing Card 2 -->
+                    <div
+                        class="md:col-span-5 bg-surface-container-lowest p-12 rounded-lg relative overflow-hidden group self-center border border-secondary/10 min-h-[300px] opacity-0 pointer-events-none">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pull Quote Component -->
+        <section class="max-w-7xl mx-auto px-10 mb-32 flex justify-center">
+            <div class="max-w-4xl relative">
+                <div class="absolute -left-8 top-0 bottom-0 w-1.5 bg-secondary rounded-full"></div>
+                <blockquote
+                    class="text-2xl md:text-3xl lg:text-4xl md:text-3xl md:text-4xl lg:text-5xl font-headline leading-tight text-on-surface italic px-4">
+                    "Journalism is the first rough draft of history, but literature is the ink that makes that history
+                    felt by the human heart."
                 </blockquote>
-</div>
-</section>
-<!-- Photography Highlights -->
-<section class="max-w-7xl mx-auto px-10 mb-32">
-<div class="flex justify-between items-baseline mb-16">
-<h2 class="text-[1.75rem] font-headline font-bold">Photography Highlights</h2>
-<span class="font-label text-[0.6875rem] uppercase tracking-widest text-primary font-bold">Curated 2026 Collection</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="space-y-6">
-<div class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
-<img alt="Visual Archives" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="B&amp;W close up of vintage typewriter keys with shallow depth of field and soft ambient light" src="assets/images/photography/Photography 1.jpg"/>
-</div>
-</div>
-<div class="space-y-6 md:mt-24">
-<div class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
-<img alt="Visual Archives" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Sun-drenched stacks of antique books in an old bookstore with floating dust motes and warm hazel tones" src="assets/images/photography/Photography 11.jpg"/>
-</div>
-</div>
-</div>
-</section>
+            </div>
+        </section>
+        <!-- Photography Highlights -->
+        <section class="max-w-7xl mx-auto px-10 mb-32">
+            <div class="flex justify-between items-baseline mb-16">
+                <h2 class="text-[1.75rem] font-headline font-bold">Photography Highlights</h2>
+                <span class="font-label text-[0.6875rem] uppercase tracking-widest text-primary font-bold">Curated 2026
+                    Collection</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div
+                        class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
+                        <img alt="Visual Archives"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            data-alt="B&amp;W close up of vintage typewriter keys with shallow depth of field and soft ambient light"
+                            src="assets/images/photography/Photography 1.jpg" />
+                    </div>
+                </div>
+                <div class="space-y-6 md:mt-24">
+                    <div
+                        class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
+                        <img alt="Visual Archives"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            data-alt="Sun-drenched stacks of antique books in an old bookstore with floating dust motes and warm hazel tones"
+                            src="assets/images/photography/Photography 11.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
-    <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-        <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
-        <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
-            <button id="footerContactBtn" class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
-            <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all" href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
+        <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
+                <button id="footerContactBtn"
+                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
+                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+                All rights reserved.</div>
         </div>
-        <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories. All rights reserved.</div>
-    </div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
