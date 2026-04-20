@@ -1,252 +1,364 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<title>Susie's Stories</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface": "#fbf9f5", // Neutral cream/beige
-                    "on-surface": "#191c1e",
-                    "background": "#fbf9f5",
-                    "primary": "#7796a2", // Pastel blue
-                    "secondary": "#d9b8c0", // Pastel pink
-                    "tertiary": "#9eb3a2", // Sage/Pastel green
-                    "primary-container": "#9eb3a2",
-                    "on-secondary": "#ffffff",
-                    "surface-container": "#efeeea",
-                    "surface-bright": "#fbf9f5",
-                    "on-primary-container": "#ffffff",
-                    "inverse-surface": "#30312e",
-                    "on-surface-variant": "#5b403d",
-                    "surface-container-low": "#f5f3ef",
-                    "surface-container-lowest": "#ffffff",
-                    "outline-variant": "#e1e2e4",
-                    "error": "#ba1a1a",
-                    "on-primary": "#ffffff",
-                    "outline": "#906f6c"
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Susie's Stories</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fbf9f5", // Neutral cream/beige
+                        "on-surface": "#191c1e",
+                        "background": "#fbf9f5",
+                        "primary": "#7796a2", // Pastel blue
+                        "secondary": "#d9b8c0", // Pastel pink
+                        "tertiary": "#9eb3a2", // Sage/Pastel green
+                        "primary-container": "#9eb3a2",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#efeeea",
+                        "surface-bright": "#fbf9f5",
+                        "on-primary-container": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#5b403d",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#e1e2e4",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "outline": "#906f6c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Noto Serif"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         body {
             background-color: #fbf9f5;
         }
     </style>
 </head>
+
 <body class="bg-surface text-on-surface font-body selection:bg-secondary/30 selection:text-on-surface">
-<!-- TopNavBar -->
-<nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50">
-<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-<div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
-            Susie's Stories
+    <!-- TopNavBar -->
+    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+                Susie's Stories
+            </div>
+            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors"
+                    href="about.html">About Me</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors"
+                    href="photography.html">Photography</a>
+                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1"
+                    href="written-works.html">Written Works</a>
+            </div>
+            <div class="flex items-center gap-4 text-[#7796a2]">
+                <span id="copyMailBtn"
+                    class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity"
+                    data-icon="mail">mail</span>
+            </div>
         </div>
-<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors" href="index.html">Home</a>
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors" href="about.html">About Me</a>
-<a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] transition-colors" href="photography.html">Photography</a>
-<a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1" href="written-works.html">Written Works</a>
-</div>
-<div class="flex items-center gap-4 text-[#7796a2]">
-<span id="copyMailBtn" class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity" data-icon="mail">mail</span>
-</div>
-</div>
-<div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
-</nav>
-<main class="max-w-7xl mx-auto px-8 pt-16 pb-24">
-<!-- Header Section -->
-<header class="mb-20 max-w-3xl">
-<h1 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">The Written Word.</h1>
-<p class="text-lg leading-relaxed text-on-surface/80 font-body">
-            A collection of narratives, ranging from the purely imaginative to rigorous investigative journalism. Each piece is an attempt to capture the fleeting essence of our shared reality.
-        </p>
-</header>
-<!-- Creative Writing Section -->
-<section class="mb-24">
-<div class="flex items-center gap-4 mb-12">
-<h2 class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold">Creative Writing</h2>
-<div class="h-px flex-grow bg-outline-variant/30"></div>
-</div>
-<div class="flex items-center justify-center py-20 border border-secondary/10 border-dashed rounded-xl bg-surface-container-low text-on-surface-variant/60 font-body text-sm uppercase tracking-widest">
-    Coming Soon
-</div>
-</section>
-<!-- Published Articles Section -->
-<section>
-<div class="flex items-center gap-4 mb-12">
-<h2 class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold">Published Articles</h2>
-<div class="h-px flex-grow bg-outline-variant/30"></div>
-</div>
-<div id="published-articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<!-- Card 1 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwL6rSdoAE8hfOMHv00YVTi3dD_qeS11IEeDg_Py0JwSOJdHwuo4RnK3N2BDQ6Z_k5MztBcQlMcgYc8lwrjOtru_s4lgPutXP-ey_VEsntEoNsEEbdADodjg5_ev_87uxsJV5CsVYtH39NZzItE6y6pyubhbJuhzxf2qaEP2UlFZW9S2aDSYFkbZGPBOHffuOTyleenWvY99FzeCDP92KGfVKkvGMOJkC2P2IQ9n7waegKbgnIgKoz-6EJM_uN3zzb2HxATFnSZtc"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">BLOG POST</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Everything is Political: Contemporary Issues</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    It’s important now more than ever to “get into” politics and start advocating for your beliefs. Human Rights Although human rights are supposed to be protected under the Constitution, many are at risk of being revoked due to ongoing controversy within the United States.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-everything-is-political-contemporary-issues-blog-.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-8 pt-16 pb-24">
+        <!-- Header Section -->
+        <header class="mb-20 max-w-3xl">
+            <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">The
+                Written Word.</h1>
+            <p class="text-lg leading-relaxed text-on-surface/80 font-body">
+                A collection of narratives, ranging from the purely imaginative to rigorous investigative journalism.
+                Each piece is an attempt to capture the fleeting essence of our shared reality.
+            </p>
+        </header>
+        <!-- Creative Writing Section -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold">Creative
+                    Writing</h2>
+                <div class="h-px flex-grow bg-outline-variant/30"></div>
+            </div>
+            <div
+                class="flex items-center justify-center py-20 border border-secondary/10 border-dashed rounded-xl bg-surface-container-low text-on-surface-variant/60 font-body text-sm uppercase tracking-widest">
+                Coming Soon
+            </div>
+        </section>
+        <!-- Published Articles Section -->
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold">Published
+                    Articles</h2>
+                <div class="h-px flex-grow bg-outline-variant/30"></div>
+            </div>
+            <div id="published-articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Card 1 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/Everything is Political Cover.jpg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">BLOG
+                            POST</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Everything is
+                        Political: Contemporary Issues</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        It’s important now more than ever to “get into” politics and start advocating for your beliefs.
+                        Human Rights Although human rights are supposed to be protected under the Constitution, many are
+                        at risk of being revoked due to ongoing controversy within the United States.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-everything-is-political-contemporary-issues-blog-.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 2 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_1ztYdGwWoXeFVvVB6pTNlJ3oFpmZbS6FcPufAZgbW_4_Jpc-dFLGIm09guMXFttOr_CF13oeYbIIbJxjHhatt_F8KyOWeZsCq604SELkWKRm-9hqpfUK3jQR0xljGZ4Yhw6dhQa7GTeDWmdLkrSaq4hQVG4Z4ORyEAENhbq1B3lrCaN-n8AIWYv1Qh5y7p90aQS8I3mPGxs3mFNzkMEt-fL-34JNdh7G1LJooH0HnKW9FbjObkSwPSVm3S-jaxSfnMEbE-63kuA"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">PUBLISHED WORK</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Slacktivism: A Real Term for Unreal (Ineffective) Efforts</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    Slacktivism: A Real Term for Unreal (Ineffective) Efforts In the age of technology and social media, slacktivism has become more prevalent in the United States. Although social media has been used to spread information and awareness on primary issues, it has also been a source for slacktivism to sprout.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-slacktivism-a-real-term-for-unreal-ineffective-efforts.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+                <!-- Card 2 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/Slacktivism Article.jpg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">PUBLISHED
+                            WORK</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Slacktivism: A
+                        Real Term for Unreal (Ineffective) Efforts</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        Slacktivism: A Real Term for Unreal (Ineffective) Efforts In the age of technology and social
+                        media, slacktivism has become more prevalent in the United States. Although social media has
+                        been used to spread information and awareness on primary issues, it has also been a source for
+                        slacktivism to sprout.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-slacktivism-a-real-term-for-unreal-ineffective-efforts.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 3 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ5KQSMCxn5zVAzwdRDdnvpwHpVvuqwBaZe_Dw_7H7E64HMOmekWcGJB-oS1Wm793aI5uqXMyePfWPw-UBld4eEnGY08Fd7FOIrTbp7cz3HgcvBdbs3boQv0weGaSw5GplJVhbmkQgt61DiSgg068HBJaZYLnr1m65CreFuFlHcLFu0u7o1YFwRWnjcKums4RDStRFqk8qKz_pVpLHzhpzgsvgH5SZ8r2UgV5lv5-Gq52nPgY1amrlgbqkGhwEbw-_CqH_jH-pxfU"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE TOWER STUDENT RUN NEWS HQ</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">ALMA, Kean's New Mental Health Club</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    Article Three (Draft) Title: ALMA: Kean’s New Mental Health Club Mind and Heart Wellness: ALMA is Kean’s new mental health club dedicated to providing a safe space for students to share their experiences and struggles.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-the-tower-alma-kean-s-new-mental-health-club-1-.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+                <!-- Card 3 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/ALMA First Meeting 1.JPG" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE
+                            TOWER STUDENT RUN NEWS HQ</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">ALMA, Kean's
+                        New Mental Health Club</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        Article Three (Draft) Title: ALMA: Kean’s New Mental Health Club Mind and Heart Wellness: ALMA
+                        is Kean’s new mental health club dedicated to providing a safe space for students to share their
+                        experiences and struggles.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-the-tower-alma-kean-s-new-mental-health-club-1-.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 4 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwL6rSdoAE8hfOMHv00YVTi3dD_qeS11IEeDg_Py0JwSOJdHwuo4RnK3N2BDQ6Z_k5MztBcQlMcgYc8lwrjOtru_s4lgPutXP-ey_VEsntEoNsEEbdADodjg5_ev_87uxsJV5CsVYtH39NZzItE6y6pyubhbJuhzxf2qaEP2UlFZW9S2aDSYFkbZGPBOHffuOTyleenWvY99FzeCDP92KGfVKkvGMOJkC2P2IQ9n7waegKbgnIgKoz-6EJM_uN3zzb2HxATFnSZtc"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE TOWER STUDENT RUN NEWS HQ</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">KUDC’s Fight for Justice</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    Article Two (Draft) Title: KUDC’s Fight for Justice The Kean University Dance Club (KUDC) is currently under suspension and has accused Kean University of wrongful suspension of their team as well as the absence of fairness, due process, and equity.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-the-tower-kudc-s-fight-for-justice-2-.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+                <!-- Card 4 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/KUDC Cover.jpg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE
+                            TOWER STUDENT RUN NEWS HQ</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">KUDC’s Fight
+                        for Justice</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        Article Two (Draft) Title: KUDC’s Fight for Justice The Kean University Dance Club (KUDC) is
+                        currently under suspension and has accused Kean University of wrongful suspension of their team
+                        as well as the absence of fairness, due process, and equity.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-the-tower-kudc-s-fight-for-justice-2-.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 5 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_1ztYdGwWoXeFVvVB6pTNlJ3oFpmZbS6FcPufAZgbW_4_Jpc-dFLGIm09guMXFttOr_CF13oeYbIIbJxjHhatt_F8KyOWeZsCq604SELkWKRm-9hqpfUK3jQR0xljGZ4Yhw6dhQa7GTeDWmdLkrSaq4hQVG4Z4ORyEAENhbq1B3lrCaN-n8AIWYv1Qh5y7p90aQS8I3mPGxs3mFNzkMEt-fL-34JNdh7G1LJooH0HnKW9FbjObkSwPSVm3S-jaxSfnMEbE-63kuA"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE TOWER STUDENT RUN NEWS HQ</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Kierstin Mcilwrath First-Gen Feature</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    First-Generation Features: Kierstin McIlwrath In our new first-generation features series, and in collaboration with the Office for Student Retention and Educational Innovation, we spotlight trailblazing first-generation students. These students are eager to share their story about how being a first-generation college student has impacted them and shaped their academic career.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-the-tower-kierstin-mcilwrath-first-gen-feature.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+                <!-- Card 5 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/Kierstin McIlwrath Cover.jpeg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE
+                            TOWER STUDENT RUN NEWS HQ</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Kierstin
+                        Mcilwrath First-Gen Feature</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        First-Generation Features: Kierstin McIlwrath In our new first-generation features series, and
+                        in collaboration with the Office for Student Retention and Educational Innovation, we spotlight
+                        trailblazing first-generation students. These students are eager to share their story about how
+                        being a first-generation college student has impacted them and shaped their academic career.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-the-tower-kierstin-mcilwrath-first-gen-feature.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 6 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ5KQSMCxn5zVAzwdRDdnvpwHpVvuqwBaZe_Dw_7H7E64HMOmekWcGJB-oS1Wm793aI5uqXMyePfWPw-UBld4eEnGY08Fd7FOIrTbp7cz3HgcvBdbs3boQv0weGaSw5GplJVhbmkQgt61DiSgg068HBJaZYLnr1m65CreFuFlHcLFu0u7o1YFwRWnjcKums4RDStRFqk8qKz_pVpLHzhpzgsvgH5SZ8r2UgV5lv5-Gq52nPgY1amrlgbqkGhwEbw-_CqH_jH-pxfU"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE TOWER STUDENT RUN NEWS HQ</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Local Sites to Visit</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    Title: Local Sites to Visit Are you a student that resides on campus and would like to get to know the surrounding cities? Are you a commuter with no places to visit between classes? Whether you live on campus or commute, it is always a great opportunity to learn what sites there are around campus.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-the-tower-local-sites-to-visit-1-.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
+                <!-- Card 6 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/Local Sites to Visit Cover Photo.jpg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE
+                            TOWER STUDENT RUN NEWS HQ</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">Local Sites to
+                        Visit</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        Title: Local Sites to Visit Are you a student that resides on campus and would like to get to
+                        know the surrounding cities? Are you a commuter with no places to visit between classes? Whether
+                        you live on campus or commute, it is always a great opportunity to learn what sites there are
+                        around campus.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-the-tower-local-sites-to-visit-1-.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
 
-<!-- Card 7 -->
-<article class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
-<div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
-<img alt="Document layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cover image or conceptual layout for the written piece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwL6rSdoAE8hfOMHv00YVTi3dD_qeS11IEeDg_Py0JwSOJdHwuo4RnK3N2BDQ6Z_k5MztBcQlMcgYc8lwrjOtru_s4lgPutXP-ey_VEsntEoNsEEbdADodjg5_ev_87uxsJV5CsVYtH39NZzItE6y6pyubhbJuhzxf2qaEP2UlFZW9S2aDSYFkbZGPBOHffuOTyleenWvY99FzeCDP92KGfVKkvGMOJkC2P2IQ9n7waegKbgnIgKoz-6EJM_uN3zzb2HxATFnSZtc"/>
-</div>
-<div class="flex gap-2 mb-4">
-<span class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE TOWER STUDENT RUN NEWS HQ</span>
-<span class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2024</span>
-</div>
-<h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">President Trump's State of the Union Address</h3>
-<p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
-                    Article Four (Draft) Title: President Trump’s State of the Union Address President Trump delivered the longest State of the Union Address, on Tuesday, February 24th, in which he spoke of his plans for the second year of his second term, the current state of our economy, and clashed with Democrats on many controversial topics.
-                </p>
-<a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4" href="article-the-tower-president-trump-s-state-of-the-union-address.html" target="_blank">
-                    Read Document <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
-</a>
-</article>
-</div>
-</section>
-<!-- Pull Quote Component -->
-<div class="mt-32 max-w-4xl border-l-4 border-secondary pl-12 py-4">
-<blockquote class="font-headline text-3xl md:text-4xl lg:text-5xl italic leading-tight text-on-surface">
-            "To write is to archive the soul's reaction to the world's constant movement."
-        </blockquote>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
-    <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-        <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
-        <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
-            <button id="footerContactBtn" class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
-            <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all" href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+                <!-- Card 7 -->
+                <article
+                    class="group relative bg-surface-container-low p-8 rounded-xl transition-all duration-300 hover:bg-surface-container-high border border-secondary/10">
+                    <div class="aspect-[16/9] mb-8 overflow-hidden rounded-lg">
+                        <img alt="Document layout"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Cover image or conceptual layout for the written piece"
+                            src="assets/images/articles/State of the Union Cover.jpg" />
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span
+                            class="font-label text-[0.6rem] bg-tertiary/20 px-2 py-1 rounded text-on-surface/70 font-bold uppercase tracking-widest">THE
+                            TOWER STUDENT RUN NEWS HQ</span>
+                        <span
+                            class="font-label text-[0.6rem] bg-on-surface/5 px-2 py-1 rounded text-on-surface/60">2026</span>
+                    </div>
+                    <h3 class="font-headline text-[1.75rem] font-bold text-on-surface mb-4 leading-tight">President
+                        Trump's State of the Union Address</h3>
+                    <p class="font-body text-on-surface/70 leading-relaxed mb-6 line-clamp-3">
+                        Article Four (Draft) Title: President Trump’s State of the Union Address President Trump
+                        delivered the longest State of the Union Address, on Tuesday, February 24th, in which he spoke
+                        of his plans for the second year of his second term, the current state of our economy, and
+                        clashed with Democrats on many controversial topics.
+                    </p>
+                    <a class="font-headline italic text-primary hover:text-primary transition-colors flex items-center gap-2 group-hover:underline decoration-2 underline-offset-4"
+                        href="article-the-tower-president-trump-s-state-of-the-union-address.html">
+                        Read Document <span class="material-symbols-outlined text-sm"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- Pull Quote Component -->
+        <div class="mt-32 max-w-4xl border-l-4 border-secondary pl-12 py-4">
+            <blockquote class="font-headline text-3xl md:text-4xl lg:text-5xl italic leading-tight text-on-surface">
+                "To write is to archive the soul's reaction to the world's constant movement."
+            </blockquote>
         </div>
-        <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2024 Susie's Stories. All rights reserved.</div>
-    </div>
-</footer>
-<script src="assets/js/main.js"></script>
-</body></html>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
+        <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
+                <button id="footerContactBtn"
+                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
+                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+                All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
