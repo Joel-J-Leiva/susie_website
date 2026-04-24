@@ -46,4 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('copyMailBtn')?.addEventListener('click', copyEmail);
     document.getElementById('footerContactBtn')?.addEventListener('click', copyEmail);
     document.getElementById('getInTouchBtn')?.addEventListener('click', copyEmail);
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // Toggle icon from menu to close
+            if (mobileMenuBtn.innerText.trim() === 'menu') {
+                mobileMenuBtn.innerText = 'close';
+            } else {
+                mobileMenuBtn.innerText = 'menu';
+            }
+        });
+    }
 });

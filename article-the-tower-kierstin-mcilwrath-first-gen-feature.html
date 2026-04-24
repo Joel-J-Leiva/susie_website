@@ -58,10 +58,19 @@
             <div class="flex items-center gap-4 text-[#7796a2]">
                 <button id="copyMailBtn"
                     class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
+                <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">menu</button>
             </div>
         </div>
         <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
-    </nav>
+    
+        <div id="mobileMenu" class="hidden flex-col bg-[#f7e1e6] dark:bg-stone-900/95 px-8 pt-2 pb-6 gap-4 md:hidden border-b border-secondary/10 shadow-sm transition-all duration-300">
+            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="index.html">Home</a>
+            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="about.html">About Me</a>
+            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="photography.html">Photography</a>
+            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="written-works.html">Written Works</a>
+            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="achievements.html">Achievements</a>
+        </div>
+</nav>
 
     <main class="max-w-7xl mx-auto px-6 md:px-12 pt-32 mb-20 text-center">
         <a href="written-works.html"
@@ -195,7 +204,7 @@
                 All rights reserved.</div>
         </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=3"></script>
 </body>
 
 </html>
