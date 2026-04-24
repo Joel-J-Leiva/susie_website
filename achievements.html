@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Susie's Stories</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fbf9f5", // Neutral cream/beige
+                        "on-surface": "#191c1e",
+                        "background": "#fbf9f5",
+                        "primary": "#7796a2", // Pastel blue
+                        "secondary": "#d9b8c0", // Pastel pink
+                        "tertiary": "#9eb3a2", // Sage/Pastel green
+                        "primary-container": "#9eb3a2",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#efeeea",
+                        "surface-bright": "#fbf9f5",
+                        "on-primary-container": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#5b403d",
+                        "surface-container-low": "#f5f3ef",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#e1e2e4",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "outline": "#906f6c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #fbf9f5;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30 selection:text-on-surface">
+    <!-- TopNavBar -->
+    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+                Susie's Stories
+            </div>
+            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="about.html">About Me</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="photography.html">Photography</a>
+                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                    href="written-works.html">Written Works</a>
+                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1"
+                    href="achievements.html">Achievements</a>
+            </div>
+            <div class="flex items-center gap-4 text-[#7796a2]">
+                <span id="copyMailBtn"
+                    class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity"
+                    data-icon="mail">mail</span>
+            </div>
+        </div>
+        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-8 pt-16 pb-24 min-h-[calc(100vh-20rem)]">
+        <header class="mb-16">
+            <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
+                Achievements.</h1>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Awards Section -->
+            <div
+                class="bg-surface-container-low p-10 rounded-xl border border-secondary/10 shadow-sm relative overflow-hidden group">
+                <h2 class="font-headline text-3xl font-bold mb-8">Awards</h2>
+                <ul class="space-y-6">
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Outstanding Kean Student Human Rights
+                            Activist</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">President's Advisory Council</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2025-2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Gold Leader Level</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2025-2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Silver Leader Level</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2024-2025</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Honor Societies Section -->
+            <div
+                class="bg-surface-container-low p-10 rounded-xl border border-secondary/10 shadow-sm relative overflow-hidden group">
+                <h2 class="font-headline text-3xl font-bold mb-8">Honor Societies</h2>
+                <ul class="space-y-6">
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Phi Kappa Phi</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Lambda Pi Eta</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Epsilon Epsilon Omega</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2026</span>
+                    </li>
+                    <li
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-surface-container-high pb-4 gap-2">
+                        <p class="font-body text-lg text-on-surface font-medium">Alpha Alpha Alpha</p>
+                        <span
+                            class="font-label text-sm font-bold text-tertiary uppercase tracking-widest sm:shrink-0 text-left sm:text-right">2025</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
+        <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
+                <button id="footerContactBtn"
+                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
+                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+                All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
