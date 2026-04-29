@@ -1,0 +1,33 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+    background-color: #fbf9f5;
+    color: #1b1c1a;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.serif {
+    font-family: 'Noto Serif', serif;
+}
+
+.masonry-grid {
+    columns: 1;
+    column-gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .masonry-grid {
+        columns: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .masonry-grid {
+        columns: 3;
+    }
+}

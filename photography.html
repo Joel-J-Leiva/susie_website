@@ -13,103 +13,18 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#fbf9f5",
-                        "on-secondary": "#ffffff",
-                        "surface-container": "#efeeea",
-                        "background": "#fbf9f5",
-                        "secondary-fixed-dim": "#a9c9f5",
-                        "tertiary": "#9eb3a2", // Sage green from SCREEN_8
-                        "primary-container": "#9eb3a2", // Using sage green for primary containers
-                        "on-secondary-fixed": "#001c37",
-                        "primary-fixed-dim": "#ffb3ac",
-                        "surface-bright": "#fbf9f5",
-                        "on-surface": "#191c1e",
-                        "on-primary-container": "#ffffff",
-                        "tertiary-fixed": "#dae3f1",
-                        "inverse-surface": "#30312e",
-                        "on-surface-variant": "#5b403d",
-                        "tertiary-container": "#9eb3a2",
-                        "secondary": "#d9b8c0", // Pastel pink from SCREEN_8
-                        "surface-container-low": "#f5f3ef",
-                        "on-primary-fixed": "#410003",
-                        "on-secondary-fixed-variant": "#27486d",
-                        "secondary-fixed": "#d9b8c0",
-                        "on-tertiary": "#ffffff",
-                        "primary": "#7796a2", // Pastel blue from SCREEN_8
-                        "error": "#ba1a1a",
-                        "on-tertiary-container": "#ffffff",
-                        "tertiary-fixed-dim": "#bec7d4",
-                        "inverse-on-surface": "#f2f0ed",
-                        "on-tertiary-fixed-variant": "#3e4852",
-                        "on-primary": "#ffffff",
-                        "surface-dim": "#dbdad6",
-                        "outline": "#906f6c",
-                        "on-secondary-container": "#395a80",
-                        "surface-container-high": "#eae8e4",
-                        "outline-variant": "#e4beba",
-                        "surface-tint": "#7796a2",
-                        "on-tertiary-fixed": "#131c26",
-                        "on-error-container": "#93000a",
-                        "surface-variant": "#e4e2de",
-                        "on-background": "#191c1e",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-primary": "#ffb3ac",
-                        "surface-container-highest": "#e4e2de",
-                        "secondary-container": "#d9b8c0",
-                        "on-error": "#ffffff",
-                        "primary-fixed": "#ffdad6",
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#93000f"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .masonry-grid {
-            columns: 1;
-            column-gap: 2.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .masonry-grid {
-                columns: 2;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .masonry-grid {
-                columns: 3;
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/tailwind-config.js"></script>
 </head>
 
 <body class="bg-background text-on-surface font-body selection:bg-secondary/40">
-    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50">
-        <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-            <a href="index.html" class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+    <!-- Top Navigation Bar -->
+    <header class="bg-[#f7e1e6] dark:bg-stone-900/80 backdrop-blur-md sticky top-0 z-50">
+        <nav class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+            <a href="index.html" class="flex items-center gap-3 font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100 hover:opacity-80 transition-opacity">
+                <img src="assets/images/favicon.svg" alt="Susie's Stories Tulip Icon" class="w-7 h-7" />
                 Susie's Stories
             </a>
             <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">

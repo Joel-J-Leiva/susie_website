@@ -13,57 +13,18 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#fbf9f5", // Neutral cream/beige
-                        "on-surface": "#191c1e",
-                        "background": "#fbf9f5",
-                        "primary": "#7796a2", // Pastel blue
-                        "secondary": "#d9b8c0", // Pastel pink
-                        "tertiary": "#9eb3a2", // Sage green
-                        "primary-container": "#9eb3a2",
-                        "on-primary-container": "#ffffff",
-                        "surface-container": "#f5f3ef",
-                        "surface-container-low": "#f5f3ef",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#e1e2e4"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        body {
-            background-color: #fbf9f5;
-            color: #1b1c1a;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/tailwind-config.js"></script>
 </head>
 
 <body class="font-body selection:bg-secondary/30 selection:text-on-surface">
     <!-- TopNavBar -->
     <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50">
         <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-            <a href="index.html" class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100 hover:opacity-80 transition-opacity">
+            <a href="index.html" class="flex items-center gap-3 font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100 hover:opacity-80 transition-opacity">
+                <img src="assets/images/favicon.svg" alt="Susie's Stories Tulip Icon" class="w-7 h-7" />
                 Susie's Stories
             </a>
             <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">

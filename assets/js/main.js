@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
+    
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.toggle('flex');
-            
             // Toggle icon from menu to close
             if (mobileMenuBtn.innerText.trim() === 'menu') {
                 mobileMenuBtn.innerText = 'close';
