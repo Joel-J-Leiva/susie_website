@@ -14,8 +14,7 @@ A static frontend portfolio website showcasing written works, photography, and p
 - `assets/`
   - `css/site.css` — Prebuilt, minified stylesheet (generated, committed)
   - `fonts/` — Self-hosted Inter and Noto Serif (woff2, latin subset) + `OFL.txt` license
-  - `favicon.svg` — Site icon
-  - `images/` — Contains portraits and media (WebP)
+  - `images/` — Contains portraits and media (WebP) plus `favicon.svg`, the tulip site icon also used as the nav logo
   - `js/main.js` — Shared JavaScript (email copy, mobile menu, gallery filter, scroll reveal, nav shadow)
   - `resumes/` — PDF CV files
 - `src/input.css` — Stylesheet source (Tailwind directives, base styles, motion)

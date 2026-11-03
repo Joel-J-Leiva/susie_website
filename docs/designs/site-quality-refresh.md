@@ -995,6 +995,29 @@ details.
 *   **Result:** CLS is 0.001 on index and photography, down from 0.059 and
     0.195.
 
+### Merge with `origin/main` (2026-11-03)
+
+Two commits had landed on `origin/main` after this branch started
+(`336d3cc`, `dfc201c`). They were merged into the branch, with these
+resolutions:
+
+*   **Dropped:** `assets/js/tailwind-config.js` and `assets/css/styles.css`.
+    They still used the Play CDN, and `site.css` supersedes them.
+*   **Titles:** the refresh's titles are kept over "Susie's Stories |
+    Portfolio".
+*   **Tulip icon:** adopted, replacing the "S" monogram:
+    *   It lives at `assets/images/favicon.svg`.
+    *   It is recolored to the Reseda stem and the Bridal Rose flower.
+    *   It is the favicon, and a nav logo beside "Susie's Stories" on all
+        13 pages. The remote had the logo on 11 pages.
+    *   The logo has `alt=""`, because the link text already names the
+        site.
+*   **Mail icon on phones:** the remote hid it on phones on
+    `written-works.html` only. The refresh rebuilt that header, so the
+    phone-width header was rechecked instead.
+*   **Visible text:** a text comparison found no copy, image or link that
+    the refresh lost.
+
 ### Cache-bust values
 
 `site.css?v=6`, `main.js?v=6`.
