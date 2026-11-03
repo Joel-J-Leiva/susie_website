@@ -1,0 +1,12 @@
+{
+  "name": "susies-stories",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/site.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/site.css --minify --watch",
+    "check:css": "npm run build:css && git diff --exit-code -- assets/css/site.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "~3.4.17"
+  }
+}

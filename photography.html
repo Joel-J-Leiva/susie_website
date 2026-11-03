@@ -4,143 +4,68 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Susie's Stories</title>
+    <title>Photography | Susie's Stories</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Photography by Susan Annette Berube-Leiva." />
+    <link rel="canonical" href="https://susie-website.vercel.app/photography.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Susie&#x27;s Stories" />
+    <meta property="og:title" content="Photography | Susie&#x27;s Stories" />
+    <meta property="og:description" content="Photography by Susan Annette Berube-Leiva." />
+    <meta property="og:url" content="https://susie-website.vercel.app/photography.html" />
+    <meta property="og:image" content="https://susie-website.vercel.app/assets/images/susans-headshot.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/noto-serif-latin-var.woff2" as="font" type="font/woff2" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;icon_names=arrow_back,arrow_downward,arrow_forward,auto_stories,camera,close,download,edit_note,layers,mail,menu&amp;display=block"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface": "#fbf9f5",
-                        "on-secondary": "#ffffff",
-                        "surface-container": "#efeeea",
-                        "background": "#fbf9f5",
-                        "secondary-fixed-dim": "#a9c9f5",
-                        "tertiary": "#9eb3a2", // Sage green from SCREEN_8
-                        "primary-container": "#9eb3a2", // Using sage green for primary containers
-                        "on-secondary-fixed": "#001c37",
-                        "primary-fixed-dim": "#ffb3ac",
-                        "surface-bright": "#fbf9f5",
-                        "on-surface": "#191c1e",
-                        "on-primary-container": "#ffffff",
-                        "tertiary-fixed": "#dae3f1",
-                        "inverse-surface": "#30312e",
-                        "on-surface-variant": "#5b403d",
-                        "tertiary-container": "#9eb3a2",
-                        "secondary": "#d9b8c0", // Pastel pink from SCREEN_8
-                        "surface-container-low": "#f5f3ef",
-                        "on-primary-fixed": "#410003",
-                        "on-secondary-fixed-variant": "#27486d",
-                        "secondary-fixed": "#d9b8c0",
-                        "on-tertiary": "#ffffff",
-                        "primary": "#7796a2", // Pastel blue from SCREEN_8
-                        "error": "#ba1a1a",
-                        "on-tertiary-container": "#ffffff",
-                        "tertiary-fixed-dim": "#bec7d4",
-                        "inverse-on-surface": "#f2f0ed",
-                        "on-tertiary-fixed-variant": "#3e4852",
-                        "on-primary": "#ffffff",
-                        "surface-dim": "#dbdad6",
-                        "outline": "#906f6c",
-                        "on-secondary-container": "#395a80",
-                        "surface-container-high": "#eae8e4",
-                        "outline-variant": "#e4beba",
-                        "surface-tint": "#7796a2",
-                        "on-tertiary-fixed": "#131c26",
-                        "on-error-container": "#93000a",
-                        "surface-variant": "#e4e2de",
-                        "on-background": "#191c1e",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-primary": "#ffb3ac",
-                        "surface-container-highest": "#e4e2de",
-                        "secondary-container": "#d9b8c0",
-                        "on-error": "#ffffff",
-                        "primary-fixed": "#ffdad6",
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#93000f"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .masonry-grid {
-            columns: 1;
-            column-gap: 2.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .masonry-grid {
-                columns: 2;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .masonry-grid {
-                columns: 3;
-            }
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/site.css?v=6">
+    <noscript><style>.gallery-filters{display:none}</style></noscript>
 </head>
 
 <body class="bg-background text-on-surface font-body selection:bg-secondary/40">
-    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50">
+    <nav class="bg-white dark:bg-stone-900/90 backdrop-blur-md sticky top-0 docked full-width z-50 border-b border-rose/60">
         <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-            <a href="index.html" class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100">
+            <a href="index.html" class="font-headline text-2xl font-bold tracking-tighter text-on-surface dark:text-stone-100">
                 Susie's Stories
             </a>
-            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+            <div class="hidden md:flex items-center gap-10 font-headline text-lg font-medium tracking-tight">
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="index.html">Home</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="about.html">About Me</a>
-                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1"
+                <a class="text-primary dark:text-[#a0c0cd] border-b-2 border-primary pb-1"
                     href="photography.html">Photography</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="written-works.html">Written Works</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="achievements.html">Achievements</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="organizations.html">Organizations</a>
             </div>
-            <div class="flex items-center gap-4 text-[#7796a2]">
-                <button id="copyMailBtn"
+            <div class="flex items-center gap-4 text-primary">
+                <button type="button" id="copyMailBtn" aria-label="Copy email address"
                     class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
-                <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">menu</button>
+                <button type="button" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">menu</button>
             </div>
         </div>
-        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+        <div class="bg-gradient-to-b from-rose to-transparent h-px opacity-20"></div>
     
-        <div id="mobileMenu" class="hidden flex-col bg-[#f7e1e6] dark:bg-stone-900/95 px-8 pt-2 pb-6 gap-4 md:hidden border-b border-secondary/10 shadow-sm transition-all duration-300">
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="index.html">Home</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="about.html">About Me</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="photography.html">Photography</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="written-works.html">Written Works</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="achievements.html">Achievements</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="organizations.html">Organizations</a>
+        <div id="mobileMenu" class="mobile-menu md:hidden bg-white dark:bg-stone-900/95">
+            <div class="mobile-menu-inner">
+                <div class="flex flex-col px-8 pt-2 pb-6 gap-4 border-b border-rose/60">
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="index.html">Home</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="about.html">About Me</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="photography.html">Photography</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="written-works.html">Written Works</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="achievements.html">Achievements</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="organizations.html">Organizations</a>
+                </div>
+            </div>
         </div>
     </nav>
     <main class="max-w-7xl mx-auto px-8 pt-20 pb-32">
@@ -163,97 +88,125 @@
                 "Photography is an immediate reaction, drawing is a meditation." — Henri Cartier-Bresson
             </blockquote>
         </div>
+        <!-- Gallery filters: shown from first paint; a <noscript> style in <head> hides them without JS, and every photo stays visible -->
+        <div class="gallery-filters mb-12 flex flex-wrap gap-2" role="group" aria-label="Filter photos by subject">
+            <button type="button" aria-pressed="true" data-filter="all" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-white ring-1 ring-inset ring-outline hover:bg-surface-container-high aria-pressed:bg-surface-dim aria-pressed:ring-0"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">All</span> <span class="font-normal tabular-nums">15</span></button>
+            <button type="button" aria-pressed="false" data-filter="landscape" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-reseda/20 hover:bg-reseda/40 aria-pressed:bg-reseda"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Landscape</span> <span class="font-normal tabular-nums">6</span></button>
+            <button type="button" aria-pressed="false" data-filter="architecture" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-tourmaline/20 hover:bg-tourmaline/40 aria-pressed:bg-tourmaline"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Architecture</span> <span class="font-normal tabular-nums">3</span></button>
+            <button type="button" aria-pressed="false" data-filter="people" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-rose/20 hover:bg-rose/40 aria-pressed:bg-rose"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">People</span> <span class="font-normal tabular-nums">3</span></button>
+            <button type="button" aria-pressed="false" data-filter="still-life" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-taupe/20 hover:bg-taupe/40 aria-pressed:bg-taupe"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Still life</span> <span class="font-normal tabular-nums">3</span></button>
+            <button type="button" aria-pressed="false" data-filter="event" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-taupe/20 hover:bg-taupe/40 aria-pressed:bg-taupe"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Event</span> <span class="font-normal tabular-nums">2</span></button>
+            <button type="button" aria-pressed="false" data-filter="nature" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-reseda/20 hover:bg-reseda/40 aria-pressed:bg-reseda"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Nature</span> <span class="font-normal tabular-nums">2</span></button>
+            <button type="button" aria-pressed="false" data-filter="animals" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-reseda/20 hover:bg-reseda/40 aria-pressed:bg-reseda"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Animals</span> <span class="font-normal tabular-nums">1</span></button>
+            <button type="button" aria-pressed="false" data-filter="cityscape" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-tourmaline/20 hover:bg-tourmaline/40 aria-pressed:bg-tourmaline"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Cityscape</span> <span class="font-normal tabular-nums">1</span></button>
+            <button type="button" aria-pressed="false" data-filter="portrait" class="group inline-flex min-h-11 items-center gap-1.5 rounded px-3 sm:px-4 font-label text-sm font-medium text-on-surface transition-colors bg-rose/20 hover:bg-rose/40 aria-pressed:bg-rose"><span class="decoration-2 underline-offset-4 group-aria-pressed:underline">Portrait</span> <span class="font-normal tabular-nums">1</span></button>
+        </div>
         <!-- Masonry Gallery -->
-        <div class="masonry-grid">
-            <div class="break-inside-avoid mb-16">
+        <div class="masonry-grid" data-reveal-stagger>
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="landscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 1.jpg" alt="Gallery Image 1" />
+                        src="assets/images/photography/photography-10.webp" alt="Snow-covered backyard at dusk with dark shrubs, a bare tree, and suburban houses under a lavender sky" width="1200" height="1600" fetchpriority="high" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Landscape</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="landscape cityscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 2.jpg" alt="Gallery Image 2" />
+                        src="assets/images/photography/photography-14.webp" alt="Pink and lavender sunset clouds over calm bay water and a sandy beach, a faint city skyline on the horizon" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Landscape</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="landscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 3.jpg" alt="Gallery Image 3" />
+                        src="assets/images/photography/photography-15.webp" alt="Wooden boardwalk railing curving along beach dunes toward calm water under a soft pink sunset sky" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Landscape</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="landscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 4.jpg" alt="Gallery Image 4" />
+                        src="assets/images/photography/photography-16.webp" alt="Heavy storm clouds over a long fishing pier and choppy water, with beachgoers silhouetted along a waterfront railing" width="1600" height="1200" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Landscape</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="still-life landscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 5.jpg" alt="Gallery Image 5" />
+                        src="assets/images/photography/photography-3.webp" alt="Hand holding the novel Just Friends on a sandy beach, calm water and a pastel sunset sky beyond" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-taupe/30">Still life</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="still-life">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 6.jpg" alt="Gallery Image 6" />
+                        src="assets/images/photography/photography-6.webp" alt="Pale pink blossom resting on the sticky-note cover of the novel All the Bright Places, Netflix edition" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-taupe/30">Still life</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="still-life people">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 7.jpg" alt="Gallery Image 7" />
+                        src="assets/images/photography/photography-9.webp" alt="Three black-and-white photo booth strips from The Smith showing a smiling young couple, laid on a wooden table" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-taupe/30">Still life</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="architecture">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 8.jpg" alt="Gallery Image 8" />
+                        src="assets/images/photography/photography-2.webp" alt="The U.S. Supreme Court building&#x27;s marble columns and flagpole under a bright blue sky, framed by green hedges" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-tourmaline/30">Architecture</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="architecture">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 9.jpg" alt="Gallery Image 9" />
+                        src="assets/images/photography/photography-11.webp" alt="Stairwell wall lined with gold-framed vintage black-and-white portraits of men above a wooden balustrade" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-tourmaline/30">Architecture</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="event architecture">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 10.jpg" alt="Gallery Image 10" />
+                        src="assets/images/photography/photography-1.webp" alt="Protesters with a Progress Pride flag and signs including &quot;The Constitution is our only king&quot; outside the U.S. Supreme Court" width="1081" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-taupe/30">Event</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="event people">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 11.jpg" alt="Gallery Image 11" />
+                        src="assets/images/photography/photography-7.webp" alt="Ferris wheel glowing with purple and blue lights and a spider design at night above a carnival crowd" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-taupe/30">Event</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="nature landscape">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 13.jpg" alt="Gallery Image 13" />
+                        src="assets/images/photography/photography-5.webp" alt="Wild sunflowers and tall green leaves silhouetted against a soft blue and pink evening sky" width="1600" height="1200" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Nature</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="nature people">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 14.jpg" alt="Gallery Image 14" />
+                        src="assets/images/photography/photography-8.webp" alt="Two hands pressed together, each wearing a small white wildflower like a ring, in a meadow with the moon overhead" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Nature</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="animals">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 15.jpg" alt="Gallery Image 15" />
+                        src="assets/images/photography/photography-4.webp" alt="White and calico cat curled up asleep on a beige cushion in warm sunlight by a screened window" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-reseda/30">Animals</span></p>
             </div>
-            <div class="break-inside-avoid mb-16">
+            <div class="break-inside-avoid mb-16" data-reveal data-tags="portrait">
                 <div class="group relative overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
                     <img class="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        src="assets/images/photography/Photography 16.jpg" alt="Gallery Image 16" />
+                        src="assets/images/photography/photography-13.webp" alt="Young man in a dark beanie and wool coat smiling at the camera inside a bright museum gallery" width="1200" height="1600" loading="lazy" decoding="async" />
                 </div>
+                <p class="mt-3"><span class="inline-block rounded px-2 py-1 font-label text-xs font-medium leading-none text-on-surface bg-rose/30">Portrait</span></p>
             </div>
         </div>
 
@@ -261,18 +214,18 @@
     <!-- Footer Component -->
     <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
         <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="font-headline italic text-xl text-on-surface dark:text-stone-200">Susie's Stories</div>
             <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
                 <button id="footerContactBtn"
-                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
-                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
-                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+                    class="text-primary hover:underline decoration-2 underline-offset-4 transition-colors">Contact</button>
+                <a class="text-primary hover:underline decoration-2 underline-offset-4 transition-colors"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-taupe-deep">© 2026 Susie's Stories.
                 All rights reserved.</div>
         </div>
     </footer>
-    <script src="assets/js/main.js?v=3"></script>
+    <script src="assets/js/main.js?v=6" defer></script>
 </body>
 
 </html>

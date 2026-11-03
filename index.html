@@ -4,105 +4,69 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Susie's Stories</title>
+    <title>Susie's Stories | Susan Annette Berube-Leiva, Writer and Journalist</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Portfolio of Susan Annette &quot;Susie&quot; Berube-Leiva: journalism, essays, and photography by a Kean University English and Journalism student." />
+    <link rel="canonical" href="https://susie-website.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Susie&#x27;s Stories" />
+    <meta property="og:title" content="Susie&#x27;s Stories | Susan Annette Berube-Leiva, Writer and Journalist" />
+    <meta property="og:description" content="Portfolio of Susan Annette &quot;Susie&quot; Berube-Leiva: journalism, essays, and photography by a Kean University English and Journalism student." />
+    <meta property="og:url" content="https://susie-website.vercel.app/" />
+    <meta property="og:image" content="https://susie-website.vercel.app/assets/images/susans-headshot.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Susan Annette Berube-Leiva", "alternateName": "Susie", "url": "https://susie-website.vercel.app/", "image": "https://susie-website.vercel.app/assets/images/susans-headshot.webp", "jobTitle": "Student journalist and writer", "affiliation": {"@type": "CollegeOrUniversity", "name": "Kean University"}, "sameAs": ["https://www.linkedin.com/in/susan-a-berube-016a7b2b0/"]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/noto-serif-latin-var.woff2" as="font" type="font/woff2" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;icon_names=arrow_back,arrow_downward,arrow_forward,auto_stories,camera,close,download,edit_note,layers,mail,menu&amp;display=block"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        surface: "#fbf9f5", // Neutral cream/beige
-                        "on-surface": "#191c1e",
-                        background: "#fbf9f5",
-                        primary: "#7796a2", // Pastel blue for primary text/links
-                        secondary: "#d9b8c0", // Pastel pink
-                        tertiary: "#9eb3a2", // Pastel green
-                        "primary-container": "#9eb3a2", // Using pastel green for primary container/buttons
-                        "on-primary-container": "#ffffff",
-                        "surface-container-low": "#f5f3ef",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#e1e2e4"
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.125rem",
-                        lg: "0.25rem",
-                        xl: "0.5rem",
-                        full: "0.75rem"
-                    },
-                    fontFamily: {
-                        headline: ["Noto Serif"],
-                        body: ["Inter"],
-                        label: ["Inter"],
-                        display: "Noto Serif"
-                    }
-                }
-            }
-        };
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        body {
-            background-color: #fbf9f5;
-            color: #1b1c1a;
-            font-family: 'Inter', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        .serif {
-            font-family: 'Noto Serif', serif;
-        }
-    </style>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/site.css?v=6">
 </head>
 
 <body class="bg-background text-on-surface selection:bg-secondary/30 selection:text-on-surface">
     <!-- TopNavBar -->
-    <nav class="bg-[#f7e1e6] dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50">
+    <nav class="bg-white dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-rose/60">
         <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
-            <a href="index.html" class="font-['Noto_Serif'] text-2xl font-bold tracking-tighter text-[#1b1c1a] dark:text-stone-100 hover:opacity-80 transition-opacity">
+            <a href="index.html" class="font-headline text-2xl font-bold tracking-tighter text-on-surface dark:text-stone-100 hover:opacity-80 transition-opacity">
                 Susie's Stories
             </a>
-            <div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-lg font-medium tracking-tight">
-                <a class="text-[#7796a2] dark:text-[#a0c0cd] border-b-2 border-[#7796a2] pb-1"
+            <div class="hidden md:flex items-center gap-10 font-headline text-lg font-medium tracking-tight">
+                <a class="text-primary dark:text-[#a0c0cd] border-b-2 border-primary pb-1"
                     href="index.html">Home</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="about.html">About Me</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="photography.html">Photography</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="written-works.html">Written Works</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="achievements.html">Achievements</a>
-                <a class="text-[#7796a2]/80 dark:text-stone-400 hover:text-[#7796a2] dark:hover:text-stone-100 transition-colors"
+                <a class="text-on-surface/80 dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 transition-colors"
                     href="organizations.html">Organizations</a>
             </div>
-            <div class="flex items-center gap-4 text-[#7796a2]">
-                <button id="copyMailBtn"
+            <div class="flex items-center gap-4 text-primary">
+                <button type="button" id="copyMailBtn" aria-label="Copy email address"
                     class="material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">mail</button>
-                <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">menu</button>
+                <button type="button" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden material-symbols-outlined hover:opacity-80 transition-opacity active:scale-95 duration-150">menu</button>
             </div>
         </div>
-        <div class="bg-gradient-to-b from-[#f7e1e6] to-transparent h-px opacity-20"></div>
+        <div class="bg-gradient-to-b from-rose to-transparent h-px opacity-20"></div>
     
-        <div id="mobileMenu" class="hidden flex-col bg-[#f7e1e6] dark:bg-stone-900/95 px-8 pt-2 pb-6 gap-4 md:hidden border-b border-secondary/10 shadow-sm transition-all duration-300">
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="index.html">Home</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="about.html">About Me</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="photography.html">Photography</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="written-works.html">Written Works</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="achievements.html">Achievements</a>
-            <a class="text-[#7796a2] hover:text-[#7796a2]/80 dark:text-stone-400 dark:hover:text-stone-100 font-['Noto_Serif'] text-lg" href="organizations.html">Organizations</a>
+        <div id="mobileMenu" class="mobile-menu md:hidden bg-white dark:bg-stone-900/95">
+            <div class="mobile-menu-inner">
+                <div class="flex flex-col px-8 pt-2 pb-6 gap-4 border-b border-rose/60">
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="index.html">Home</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="about.html">About Me</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="photography.html">Photography</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="written-works.html">Written Works</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="achievements.html">Achievements</a>
+                    <a class="text-primary hover:text-on-surface/80 dark:text-stone-400 dark:hover:text-stone-100 font-headline text-lg" href="organizations.html">Organizations</a>
+                </div>
+            </div>
         </div>
 </nav>
     <main class="pt-32">
@@ -114,26 +78,27 @@
                         class="font-label text-[0.6875rem] uppercase tracking-[0.05em] text-tertiary font-bold mb-4 block">Introduction</span>
                     <h1
                         class="text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-headline font-bold tracking-tight mb-8">
-                        Susan Annette Berube (Susie): <br />
+                        Susan Annette Berube-Leiva (Susie): <br />
                         Storyteller, Student, Activist.
                     </h1>
                     <p class="text-xl font-body leading-relaxed text-on-surface/80 max-w-xl">
                         Exploring the intersection of literature, news, and the human experience through long-form
                         journalism and visual documentation.
                     </p>
-                    <a href="written-works.html"
-                        class="inline-block bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">
-                        View Portfolio
-                    </a>
-                    <a class="font-headline italic text-lg text-primary border-b-2 border-primary/20 hover:border-primary transition-all"
-                        href="article-everything-is-political-contemporary-issues-blog-.html">Read my latest paper</a>
+                    <div class="mt-10 flex flex-wrap items-center gap-6">
+                        <a href="written-works.html"
+                            class="inline-block bg-tertiary text-white px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">
+                            View Portfolio
+                        </a>
+                        <a class="font-headline italic text-lg text-primary border-b-2 border-primary/20 hover:border-primary transition-colors"
+                            href="article-everything-is-political-contemporary-issues-blog-.html">Read my latest paper</a>
+                    </div>
                 </div>
                 <div class="flex-1 w-full">
                     <div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden relative group">
-                        <img alt="Susan Annette Berube (Susie)"
+                        <img alt="Susan Annette Berube-Leiva smiling in an olive vest, white tee, and heart pendant against a gray studio backdrop"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            data-alt="Candid portrait of a young woman with books in a sunlit vintage library setting, soft warm golden hour light"
-                            src="assets/images/susans-headshot.jpg" />
+                            src="assets/images/susans-headshot.webp" width="800" height="1200" fetchpriority="high" decoding="async" />
                         <div
                             class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-lg border-2 border-secondary/20">
                         </div>
@@ -142,7 +107,7 @@
             </div>
         </section>
         <!-- Featured Writing Pieces -->
-        <section class="bg-surface-container-low py-24 mb-32">
+        <section class="bg-surface-container-low py-24 mb-32" data-reveal>
             <div class="max-w-7xl mx-auto px-10">
                 <div class="flex justify-between items-baseline mb-16">
                     <h2 class="text-[1.75rem] font-headline font-bold">Featured Written Works</h2>
@@ -163,7 +128,7 @@
                             Political: Contemporary Issues (Blog)</h3>
                         <p class="text-on-surface/70 leading-relaxed mb-8 max-w-md">An exploration of the underlying
                             political currents in modern everyday topics.</p>
-                        <a class="flex items-center gap-2 font-headline italic text-lg text-primary group-hover:gap-4 transition-all"
+                        <a class="flex items-center gap-2 font-headline italic text-lg text-primary group-hover:gap-4 transition-[gap]"
                             href="article-everything-is-political-contemporary-issues-blog-.html">
                             Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>
                         </a>
@@ -176,7 +141,7 @@
             </div>
         </section>
         <!-- Pull Quote Component -->
-        <section class="max-w-7xl mx-auto px-10 mb-32 flex justify-center">
+        <section class="max-w-7xl mx-auto px-10 mb-32 flex justify-center" data-reveal>
             <div class="max-w-4xl relative">
                 <div class="absolute -left-8 top-0 bottom-0 w-1.5 bg-secondary rounded-full"></div>
                 <blockquote
@@ -187,7 +152,7 @@
             </div>
         </section>
         <!-- Photography Highlights -->
-        <section class="max-w-7xl mx-auto px-10 mb-32">
+        <section class="max-w-7xl mx-auto px-10 mb-32" data-reveal>
             <div class="flex justify-between items-baseline mb-16">
                 <h2 class="text-[1.75rem] font-headline font-bold">Photography Highlights</h2>
                 <span class="font-label text-[0.6875rem] uppercase tracking-widest text-primary font-bold">Curated 2026
@@ -197,19 +162,17 @@
                 <div class="space-y-6">
                     <div
                         class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
-                        <img alt="Visual Archives"
+                        <img alt="Protesters with a Progress Pride flag and signs including &quot;The Constitution is our only king&quot; outside the U.S. Supreme Court"
                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                            data-alt="B&amp;W close up of vintage typewriter keys with shallow depth of field and soft ambient light"
-                            src="assets/images/photography/Photography 1.jpg" />
+                            src="assets/images/photography/photography-1.webp" width="1081" height="1600" loading="lazy" decoding="async" />
                     </div>
                 </div>
                 <div class="space-y-6 md:mt-24">
                     <div
                         class="aspect-[3/2] bg-surface-container rounded-lg overflow-hidden relative shadow-sm group border-b-4 border-secondary/20">
-                        <img alt="Visual Archives"
+                        <img alt="Stairwell wall lined with gold-framed vintage black-and-white portraits of men above a wooden balustrade"
                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                            data-alt="Sun-drenched stacks of antique books in an old bookstore with floating dust motes and warm hazel tones"
-                            src="assets/images/photography/Photography 11.jpg" />
+                            src="assets/images/photography/photography-11.webp" width="1200" height="1600" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </div>
@@ -219,18 +182,18 @@
     <!-- Footer -->
     <footer class="bg-surface-container dark:bg-stone-950 mt-20 border-t border-secondary/10">
         <div class="w-full py-16 px-10 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
-            <div class="font-['Noto_Serif'] italic text-xl text-[#1b1c1a] dark:text-stone-200">Susie's Stories</div>
+            <div class="font-headline italic text-xl text-on-surface dark:text-stone-200">Susie's Stories</div>
             <div class="flex items-center gap-10 font-label text-sm tracking-widest font-semibold">
                 <button id="footerContactBtn"
-                    class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all">Contact</button>
-                <a class="text-[#7796a2] hover:underline decoration-2 underline-offset-4 transition-all"
-                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank">LinkedIn</a>
+                    class="text-primary hover:underline decoration-2 underline-offset-4 transition-colors">Contact</button>
+                <a class="text-primary hover:underline decoration-2 underline-offset-4 transition-colors"
+                    href="https://www.linkedin.com/in/susan-a-berube-016a7b2b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-[#1b1c1a]/40">© 2026 Susie's Stories.
+            <div class="font-label text-[0.6875rem] uppercase tracking-widest text-taupe-deep">© 2026 Susie's Stories.
                 All rights reserved.</div>
         </div>
     </footer>
-    <script src="assets/js/main.js?v=3"></script>
+    <script src="assets/js/main.js?v=6" defer></script>
 </body>
 
 </html>

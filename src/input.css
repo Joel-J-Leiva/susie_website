@@ -1,0 +1,213 @@
+/*! Hallmark · pre-emit critique: P3 H4 E4 S3 R4 V2 · weakest: V, layouts kept as-is by owner request (refresh, not redesign) · surface: absolute (white primary, user named) · posture: restrained · nav: existing top bar, white with rose rule · footer: existing, taupe-tint band */
+/*! Susie's Stories site.css | generated from src/input.css by `npm run build:css` (Tailwind CSS v3) - do not edit by hand */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Self-hosted text fonts (latin subset, from Google Fonts; OFL in
+     assets/fonts/OFL.txt). Variable files cover the weights used. */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('../fonts/inter-latin-var.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('../fonts/noto-serif-latin-var.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/noto-serif-latin-400-italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* Metric-matched fallbacks shown until the web fonts swap in, so the swap
+     barely moves text. Values come from the real font files (fontTools, the
+     Next.js / fontaine method): size-adjust = ratio of frequency-weighted
+     average character widths; ascent/descent/line-gap = hhea value /
+     unitsPerEm / size-adjust. Regular and bold are matched separately. */
+  @font-face {
+    font-family: 'Inter Fallback';
+    font-style: normal;
+    font-weight: 300 500;
+    src: local('Arial'), local('ArialMT');
+    size-adjust: 107.34%;
+    ascent-override: 90.25%;
+    descent-override: 22.47%;
+    line-gap-override: 0%;
+  }
+
+  @font-face {
+    font-family: 'Inter Fallback';
+    font-style: normal;
+    font-weight: 600 700;
+    src: local('Arial Bold'), local('Arial-BoldMT');
+    size-adjust: 102%;
+    ascent-override: 94.98%;
+    descent-override: 23.65%;
+    line-gap-override: 0%;
+  }
+
+  @font-face {
+    font-family: 'Noto Serif Fallback';
+    font-style: normal;
+    font-weight: 300 500;
+    src: local('Georgia');
+    size-adjust: 109.05%;
+    ascent-override: 98.03%;
+    descent-override: 26.87%;
+    line-gap-override: 0%;
+  }
+
+  @font-face {
+    font-family: 'Noto Serif Fallback';
+    font-style: normal;
+    font-weight: 600 800;
+    src: local('Georgia Bold'), local('Georgia-Bold');
+    size-adjust: 99.29%;
+    ascent-override: 107.66%;
+    descent-override: 29.51%;
+    line-gap-override: 0%;
+  }
+
+  @font-face {
+    font-family: 'Noto Serif Fallback';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Georgia Italic'), local('Georgia-Italic');
+    size-adjust: 103.65%;
+    ascent-override: 103.13%;
+    descent-override: 28.27%;
+    line-gap-override: 0%;
+  }
+
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  body {
+    background: #fff;
+    color: theme('colors.on-surface');
+    font-family: theme('fontFamily.body');
+  }
+
+  h1,
+  h2,
+  h3,
+  .serif {
+    font-family: theme('fontFamily.headline');
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.tourmaline-deep');
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .masonry-grid {
+    columns: 1;
+    column-gap: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .masonry-grid {
+      columns: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      columns: 3;
+    }
+  }
+
+  /* Gallery filter (Addendum A-3). The bar renders from first paint (no layout
+     shift); without JS it is hidden by a <noscript><style> in
+     photography.html's <head>, since the filter needs JS. Filtered-out items
+     use the `hidden` attribute, which must beat display utilities. */
+  .masonry-grid > [hidden] {
+    display: none;
+  }
+
+  /* MOTION (WS-C)
+     Progressive enhancement: content is only hidden once main.js has added
+     .motion-ready to <html>, so a failed script never hides anything. */
+  .motion-ready [data-reveal]:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  [data-reveal] {
+    transition:
+      opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  nav {
+    transition: box-shadow 0.3s ease;
+  }
+
+  nav.nav-scrolled {
+    box-shadow: 0 6px 24px -12px theme('colors.on-surface / 18%');
+  }
+
+  /* Closed: zero-height row + visibility:hidden, so links leave the tab order.
+     Visibility flips only after the collapse finishes. */
+  .mobile-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition:
+      grid-template-rows 0.3s ease,
+      visibility 0s linear 0.3s;
+  }
+
+  .mobile-menu.is-open {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    transition: grid-template-rows 0.3s ease;
+  }
+
+  .mobile-menu-inner {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .mobile-menu,
+    .mobile-menu.is-open {
+      transition: none;
+    }
+
+    .group img {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+}
